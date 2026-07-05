@@ -1,5 +1,7 @@
 .env
 model/*.pkl
+model/*.json
 checkpoint/
+logs/
 __pycache__/
 *.pyc
