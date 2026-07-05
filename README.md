@@ -1,60 +1,186 @@
-\# Real-Time Stock Data Pipeline (Kafka)
+# Real-Time Stock Anomaly Detection Pipeline
 
+A production-style, end-to-end ML pipeline that streams live stock prices,
+processes them with Apache Spark, detects anomalies using Isolation Forest,
+and visualizes results in a live Streamlit dashboard — fully automated with Apache Airflow.
 
+![Dashboard Preview](model/aapl_anomalies.png)
 
-A real-time data pipeline that streams live stock prices using Apache Kafka,
+---
 
-demonstrating production-style data engineering patterns.
+## Architecture
+Yahoo Finance API
+│
+▼
+┌─────────────────┐
+│   Apache Kafka  │  ← Real-time message streaming (Docker)
+│  (producer.py)  │
+└────────┬────────┘
+│
+▼
+┌─────────────────┐
+│  Apache Spark   │  ← Structured streaming, rolling avg + volatility
+│ (spark_consumer)│
+└────────┬────────┘
+│
+▼
+┌─────────────────┐
+│ Isolation Forest│  ← Anomaly detection model (scikit-learn)
+│  (train_model)  │
+└────────┬────────┘
+│
+▼
+┌─────────────────┐
+│   Flask API     │  ← REST prediction endpoint (/invocations)
+│ (serve_model)   │    SageMaker-compatible interface
+└────────┬────────┘
+│
+▼
+┌─────────────────┐
+│ Apache Airflow  │  ← Hourly pipeline orchestration (Docker)
+│  (DAG: 4 tasks) │
+└────────┬────────┘
+│
+▼
+┌─────────────────┐
+│    Streamlit    │  ← Live anomaly visualization dashboard
+│  (dashboard.py) │
+└─────────────────┘
 
+---
 
+## Tech Stack
 
-\## Architecture
+| Layer | Technology | Purpose |
+|---|---|---|
+| Data Streaming | Apache Kafka + Docker | Real-time stock price ingestion |
+| Stream Processing | Apache Spark (PySpark) | Rolling averages, volatility features |
+| ML Model | Isolation Forest (scikit-learn) | Unsupervised anomaly detection |
+| Model Serving | Flask REST API | SageMaker-compatible prediction endpoint |
+| Cloud Deployment | AWS SageMaker (script ready) | Production model hosting |
+| Orchestration | Apache Airflow + Docker | Hourly automated pipeline |
+| Dashboard | Streamlit + Plotly | Live anomaly visualization |
+| Version Control | Git + GitHub | Code management |
 
-Yahoo Finance API → Producer (Python) → Kafka Topic → Consumer (Python)
+---
 
+## What it does
 
+1. **Streams** live OHLCV data for AAPL, GOOGL, MSFT from Yahoo Finance into a Kafka topic every 60 seconds
+2. **Processes** the stream with Spark Structured Streaming — computing 5-minute rolling averages and volatility (standard deviation)
+3. **Detects** anomalies using an Isolation Forest model trained on 2 years of historical data (1,446 data points, 5 engineered features)
+4. **Serves** predictions via a Flask REST API matching AWS SageMaker's `/invocations` endpoint convention
+5. **Automates** the full pipeline (fetch → features → predict → save) hourly via an Airflow DAG
+6. **Visualizes** results in a live Streamlit dashboard with interactive Plotly charts
 
-\## Tech Stack
+---
 
-\- Apache Kafka (via Docker) — message streaming
+## Results
 
-\- Python (`yfinance`, `kafka-python`) — data ingestion
+The model flagged **73 anomalies** out of 1,446 historical data points (5.0%), correctly identifying:
+- The April 2025 AAPL selloff during tariff/trade fears
+- Unusual volume spikes at key price reversals
+- Sharp multi-day price deviations from rolling averages
 
-\- Docker Compose — container orchestration
+---
 
+## Project Structure
+stock-anomaly-pipeline/
+│
+├── producer.py              # Kafka producer — streams live stock data
+├── consumer.py              # Simple Kafka consumer (Week 1 verification)
+├── spark_consumer.py        # PySpark structured streaming consumer
+├── train_model.py           # Isolation Forest training + feature engineering
+├── serve_model.py           # Flask REST API for model inference
+├── deploy_sagemaker.py      # AWS SageMaker deployment script
+├── dashboard.py             # Streamlit live dashboard
+│
+├── dags/
+│   └── stock_pipeline_dag.py  # Airflow DAG (4-task pipeline automation)
+│
+├── model/
+│   └── aapl_anomalies.png   # Anomaly visualization (training data)
+│
+├── docker-compose.yml           # Kafka + Zookeeper containers
+├── docker-compose-airflow.yml   # Airflow + PostgreSQL containers
+└── README.md
 
+---
 
-\## What it does
+## How to Run
 
-\- Producer fetches live OHLCV (Open/High/Low/Close/Volume) data for AAPL, GOOGL,
+### Prerequisites
+- Docker Desktop
+- Python 3.12+
+- AWS account (for SageMaker deployment only)
 
-&#x20; and MSFT every 60 seconds and publishes it to a Kafka topic.
+### 1. Start Kafka
+```bash
+docker-compose up -d
+```
 
-\- Consumer subscribes to that topic and processes incoming messages in real time.
+### 2. Stream live data
+```bash
+# Terminal 1
+python producer.py
 
-\- Decouples data ingestion from data processing, mirroring real-world
+# Terminal 2
+python consumer.py
+```
 
-&#x20; streaming architectures (e.g., used at companies like Netflix, Uber).
+### 3. Process with Spark
+```bash
+python spark_consumer.py
+```
 
+### 4. Train the model
+```bash
+python train_model.py
+```
 
+### 5. Serve predictions
+```bash
+python serve_model.py
+# API available at http://localhost:8080/invocations
+```
 
-\## How to run
+### 6. Start Airflow
+```bash
+docker-compose -f docker-compose-airflow.yml up -d
+# UI at http://localhost:8081 (admin/[see .env])
+```
 
-1\. `docker-compose up -d` — starts Kafka + Zookeeper
+### 7. Launch dashboard
+```bash
+streamlit run dashboard.py
+# Dashboard at http://localhost:8501
+```
 
-2\. `python producer.py` — starts streaming stock data
+---
 
-3\. `python consumer.py` — starts consuming the stream
+## API Usage
 
+```bash
+curl -X POST http://localhost:8080/invocations \
+  -H "Content-Type: application/json" \
+  -d '{"instances": [[281.2, 281.2, 0.0, 0.001, 0.5]]}'
+```
 
+Response:
+```json
+{
+  "predictions": [{"instance": 0, "prediction": "normal", "anomaly_score": -0.44}],
+  "total_instances": 1,
+  "anomalies_detected": 0
+}
+```
 
-\## Coming next
+---
 
-\- PySpark consumer for real-time feature engineering
+## Built in response to
 
-\- Anomaly detection model
-
-\- AWS SageMaker deployment
-
-\- Streamlit dashboard
-
+This project was built specifically to address feedback from a data science internship rejection citing lack of experience with:
+ ✅ Real-time, end-to-end production pipelines
+ ✅ Apache Kafka for scalable data streaming
+ ✅ Apache Spark for distributed data processing
+ ✅ Cloud-based model deployment (AWS SageMaker)
