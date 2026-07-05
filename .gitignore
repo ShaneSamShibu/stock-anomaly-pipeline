@@ -1,4 +1,5 @@
+.env
+model/*.pkl
 checkpoint/
 __pycache__/
 *.pyc
-model/*.pkl

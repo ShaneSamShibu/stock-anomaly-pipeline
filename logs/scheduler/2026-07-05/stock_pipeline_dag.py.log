@@ -1,0 +1,585 @@
+[2026-07-05T15:30:21.457+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:30:21.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:30:21.464+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:30:21.463+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:30:22.626+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:30:22.618+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:30:22.635+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:30:22.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 1.239 seconds
+[2026-07-05T15:30:52.819+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:30:52.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:30:52.828+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:30:52.827+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:30:53.162+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:30:53.157+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:30:53.165+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:30:53.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.397 seconds
+[2026-07-05T15:31:23.356+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:31:23.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:31:23.363+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:31:23.362+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:31:23.744+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:31:23.736+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:31:23.747+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:31:23.778+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.434 seconds
+[2026-07-05T15:31:54.150+0000] {processor.py:161} INFO - Started process (PID=242) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:31:54.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:31:54.159+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:31:54.159+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:31:54.807+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:31:54.796+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:31:54.811+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:31:54.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.724 seconds
+[2026-07-05T15:32:25.107+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:32:25.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:32:25.115+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:32:25.114+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:32:25.614+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:32:25.603+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:32:25.621+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:32:25.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.627 seconds
+[2026-07-05T15:32:56.096+0000] {processor.py:161} INFO - Started process (PID=289) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:32:56.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:32:56.103+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:32:56.102+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:32:56.421+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:32:56.417+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:32:56.423+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:32:56.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.358 seconds
+[2026-07-05T15:33:26.786+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:33:26.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:33:26.793+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:33:26.792+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:33:27.101+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:33:27.093+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:33:27.105+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:33:27.130+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.356 seconds
+[2026-07-05T15:33:57.464+0000] {processor.py:161} INFO - Started process (PID=336) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:33:57.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:33:57.471+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:33:57.471+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:33:58.147+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:33:58.138+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:33:58.151+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:33:58.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.732 seconds
+[2026-07-05T15:34:28.372+0000] {processor.py:161} INFO - Started process (PID=356) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:34:28.374+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:34:28.378+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:34:28.378+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:34:28.712+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:34:28.703+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:34:28.716+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:34:28.753+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.391 seconds
+[2026-07-05T15:34:59.059+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:34:59.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:34:59.068+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:34:59.067+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:34:59.368+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:34:59.362+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:34:59.371+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:34:59.395+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.342 seconds
+[2026-07-05T15:35:29.870+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:35:29.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:35:29.887+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:35:29.886+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:35:30.346+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:35:30.338+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:35:30.349+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:35:30.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.507 seconds
+[2026-07-05T15:36:00.613+0000] {processor.py:161} INFO - Started process (PID=431) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:36:00.615+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:36:00.621+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:36:00.621+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:36:00.915+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:36:00.909+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:36:00.918+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:36:00.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.331 seconds
+[2026-07-05T15:36:31.279+0000] {processor.py:161} INFO - Started process (PID=451) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:36:31.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:36:31.285+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:36:31.285+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:36:31.574+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:36:31.569+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:36:31.577+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:36:31.604+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.335 seconds
+[2026-07-05T15:37:01.960+0000] {processor.py:161} INFO - Started process (PID=471) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:37:01.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:37:01.966+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:37:01.966+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:37:02.266+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:37:02.259+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:37:02.268+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:37:02.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.349 seconds
+[2026-07-05T15:37:32.632+0000] {processor.py:161} INFO - Started process (PID=500) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:37:32.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:37:32.639+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:37:32.638+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:37:33.037+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:37:33.029+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:37:33.040+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:37:33.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.443 seconds
+[2026-07-05T15:38:03.370+0000] {processor.py:161} INFO - Started process (PID=556) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:38:03.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:38:03.376+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:38:03.375+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:38:03.672+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:38:03.660+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:38:03.676+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:38:03.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.349 seconds
+[2026-07-05T15:38:34.096+0000] {processor.py:161} INFO - Started process (PID=583) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:38:34.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:38:34.105+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:38:34.104+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:38:34.710+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:38:34.702+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:38:34.714+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:38:34.750+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.663 seconds
+[2026-07-05T15:39:04.923+0000] {processor.py:161} INFO - Started process (PID=603) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:39:04.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:39:04.930+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:39:04.929+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:39:05.268+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:39:05.261+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:39:05.272+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:39:05.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.393 seconds
+[2026-07-05T15:39:35.587+0000] {processor.py:161} INFO - Started process (PID=630) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:39:35.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:39:35.591+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:39:35.590+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:39:35.976+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:39:35.972+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:39:35.978+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:39:36.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.423 seconds
+[2026-07-05T15:40:06.363+0000] {processor.py:161} INFO - Started process (PID=656) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:40:06.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:40:06.370+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:40:06.369+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:40:06.831+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:40:06.820+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:40:06.836+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:40:06.869+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.517 seconds
+[2026-07-05T15:40:37.311+0000] {processor.py:161} INFO - Started process (PID=682) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:40:37.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:40:37.317+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:40:37.317+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:40:37.595+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:40:37.591+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:40:37.596+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:40:37.617+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.319 seconds
+[2026-07-05T15:41:07.934+0000] {processor.py:161} INFO - Started process (PID=703) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:41:07.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:41:07.937+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:41:07.937+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:41:08.216+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:41:08.210+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:41:08.219+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:41:08.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.310 seconds
+[2026-07-05T15:41:38.587+0000] {processor.py:161} INFO - Started process (PID=723) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:41:38.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:41:38.597+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:41:38.596+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:41:38.963+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:41:38.957+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:41:38.965+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:41:38.992+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.415 seconds
+[2026-07-05T15:42:09.382+0000] {processor.py:161} INFO - Started process (PID=768) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:42:09.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:42:09.392+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:42:09.391+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:42:09.750+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:42:09.744+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:42:09.752+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:42:09.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.420 seconds
+[2026-07-05T15:42:40.142+0000] {processor.py:161} INFO - Started process (PID=788) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:42:40.146+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:42:40.155+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:42:40.154+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:42:40.503+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:42:40.495+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:42:40.507+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:42:40.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.415 seconds
+[2026-07-05T15:43:10.944+0000] {processor.py:161} INFO - Started process (PID=815) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:43:10.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:43:10.956+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:43:10.954+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:43:11.283+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:43:11.278+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:43:11.285+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:43:11.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.381 seconds
+[2026-07-05T15:43:41.606+0000] {processor.py:161} INFO - Started process (PID=835) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:43:41.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:43:41.610+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:43:41.610+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:43:41.887+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:43:41.883+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:43:41.888+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:43:41.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.315 seconds
+[2026-07-05T15:44:12.274+0000] {processor.py:161} INFO - Started process (PID=862) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:44:12.275+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:44:12.278+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:44:12.278+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:44:12.550+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:44:12.545+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:44:12.552+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:44:12.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.308 seconds
+[2026-07-05T15:44:42.944+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:44:42.947+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:44:42.952+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:44:42.951+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:44:43.331+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:44:43.322+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:44:43.335+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:44:43.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.436 seconds
+[2026-07-05T15:45:13.796+0000] {processor.py:161} INFO - Started process (PID=904) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:45:13.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:45:13.804+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:45:13.803+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:45:14.171+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:45:14.160+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:45:14.176+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:45:14.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.418 seconds
+[2026-07-05T15:45:44.601+0000] {processor.py:161} INFO - Started process (PID=931) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:45:44.604+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:45:44.613+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:45:44.613+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:45:45.175+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:45:45.163+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/stock_pipeline_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/stock_pipeline_dag.py", line 6, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+[2026-07-05T15:45:45.178+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:45:45.218+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.624 seconds
+[2026-07-05T15:46:36.459+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:46:36.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:46:36.466+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:46:36.465+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:46:37.992+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:46:38.204+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:46:38.203+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:stock_anomaly_pipeline
+[2026-07-05T15:46:38.215+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:46:38.214+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:stock_anomaly_pipeline
+[2026-07-05T15:46:38.222+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:46:38.222+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:stock_anomaly_pipeline
+[2026-07-05T15:46:38.224+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:46:38.224+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:46:38.233+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:46:38.233+0000] {dag.py:3118} INFO - Creating ORM DAG for stock_anomaly_pipeline
+[2026-07-05T15:46:38.255+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:46:38.254+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:46:38.313+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 1.863 seconds
+[2026-07-05T15:47:08.719+0000] {processor.py:161} INFO - Started process (PID=245) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:47:08.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:47:08.725+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:47:08.724+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:47:09.418+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:47:09.442+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:47:09.442+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:47:09.463+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:47:09.463+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:47:09.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.791 seconds
+[2026-07-05T15:47:39.882+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:47:39.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:47:39.895+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:47:39.894+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:47:40.695+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:47:40.715+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:47:40.714+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:47:40.740+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:47:40.740+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:47:40.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.913 seconds
+[2026-07-05T15:48:11.139+0000] {processor.py:161} INFO - Started process (PID=291) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:48:11.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:48:11.145+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:48:11.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:48:11.793+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:48:11.814+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:48:11.814+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:48:11.834+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:48:11.834+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:48:11.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.725 seconds
+[2026-07-05T15:48:42.249+0000] {processor.py:161} INFO - Started process (PID=312) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:48:42.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:48:42.259+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:48:42.258+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:48:42.946+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:48:42.971+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:48:42.970+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:48:42.996+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:48:42.996+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:48:43.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.792 seconds
+[2026-07-05T15:49:13.478+0000] {processor.py:161} INFO - Started process (PID=332) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:49:13.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:49:13.484+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:49:13.484+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:49:14.270+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:49:14.294+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:49:14.293+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:49:14.311+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:49:14.311+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:49:14.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.871 seconds
+[2026-07-05T15:49:44.743+0000] {processor.py:161} INFO - Started process (PID=359) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:49:44.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:49:44.751+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:49:44.750+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:49:45.495+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:49:45.518+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:49:45.518+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:49:45.535+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:49:45.535+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:49:45.565+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.835 seconds
+[2026-07-05T15:50:15.869+0000] {processor.py:161} INFO - Started process (PID=380) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:50:15.871+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:50:15.877+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:50:15.876+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:50:16.739+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:50:16.759+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:50:16.759+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:50:16.780+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:50:16.779+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:50:16.811+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.953 seconds
+[2026-07-05T15:50:47.130+0000] {processor.py:161} INFO - Started process (PID=407) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:50:47.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:50:47.136+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:50:47.136+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:50:47.902+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:50:47.924+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:50:47.924+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:50:47.940+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:50:47.940+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:50:47.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.851 seconds
+[2026-07-05T15:51:18.334+0000] {processor.py:161} INFO - Started process (PID=427) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:51:18.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:51:18.340+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:51:18.339+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:51:19.215+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:51:19.237+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:51:19.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:51:19.256+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:51:19.255+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 14:00:00+00:00, run_after=2026-07-05 15:00:00+00:00
+[2026-07-05T15:51:19.303+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.978 seconds
+[2026-07-05T15:51:49.767+0000] {processor.py:161} INFO - Started process (PID=478) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:51:49.770+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:51:49.775+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:51:49.774+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:51:50.359+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:51:50.387+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:51:50.387+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:51:50.409+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:51:50.409+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:51:50.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.671 seconds
+[2026-07-05T15:52:20.733+0000] {processor.py:161} INFO - Started process (PID=526) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:52:20.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:52:20.742+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:52:20.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:52:21.309+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:52:21.327+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:52:21.327+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:52:21.347+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:52:21.347+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:52:21.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.645 seconds
+[2026-07-05T15:52:51.707+0000] {processor.py:161} INFO - Started process (PID=554) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:52:51.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:52:51.716+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:52:51.716+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:52:52.258+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:52:52.280+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:52:52.279+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:52:52.302+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:52:52.302+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:52:52.329+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.629 seconds
+[2026-07-05T15:53:22.695+0000] {processor.py:161} INFO - Started process (PID=574) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:53:22.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:53:22.705+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:53:22.704+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:53:23.526+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:53:23.561+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:53:23.561+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:53:23.587+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:53:23.587+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:53:23.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.927 seconds
+[2026-07-05T15:53:54.005+0000] {processor.py:161} INFO - Started process (PID=594) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:53:54.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:53:54.013+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:53:54.013+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:53:54.839+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:53:54.861+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:53:54.861+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:53:54.887+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:53:54.887+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:53:54.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.924 seconds
+[2026-07-05T15:54:25.305+0000] {processor.py:161} INFO - Started process (PID=622) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:54:25.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:54:25.316+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:54:25.315+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:54:26.161+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:54:26.191+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:54:26.190+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:54:26.212+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:54:26.211+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:54:26.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.943 seconds
+[2026-07-05T15:54:56.690+0000] {processor.py:161} INFO - Started process (PID=642) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:54:56.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:54:56.703+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:54:56.702+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:54:57.536+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:54:57.562+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:54:57.562+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:54:57.583+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:54:57.582+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:54:57.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.940 seconds
+[2026-07-05T15:55:27.954+0000] {processor.py:161} INFO - Started process (PID=669) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:55:27.957+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:55:27.961+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:55:27.960+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:55:28.690+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:55:28.713+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:55:28.713+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:55:28.730+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:55:28.729+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:55:28.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.823 seconds
+[2026-07-05T15:55:59.227+0000] {processor.py:161} INFO - Started process (PID=689) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:55:59.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:55:59.253+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:55:59.250+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:55:59.966+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:55:59.985+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:55:59.985+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:56:00.001+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:56:00.001+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:56:00.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.853 seconds
+[2026-07-05T15:56:30.436+0000] {processor.py:161} INFO - Started process (PID=716) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:56:30.441+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:56:30.446+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:56:30.446+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:56:31.160+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:56:31.180+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:56:31.180+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:56:31.202+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:56:31.201+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:56:31.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.813 seconds
+[2026-07-05T15:57:01.607+0000] {processor.py:161} INFO - Started process (PID=736) to work on /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:57:01.610+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/stock_pipeline_dag.py for tasks to queue
+[2026-07-05T15:57:01.614+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:57:01.614+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:57:02.387+0000] {processor.py:840} INFO - DAG(s) 'stock_anomaly_pipeline' retrieved from /opt/airflow/dags/stock_pipeline_dag.py
+[2026-07-05T15:57:02.413+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:57:02.413+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-07-05T15:57:02.436+0000] {logging_mixin.py:188} INFO - [2026-07-05T15:57:02.436+0000] {dag.py:3954} INFO - Setting next_dagrun for stock_anomaly_pipeline to 2026-07-05 15:00:00+00:00, run_after=2026-07-05 16:00:00+00:00
+[2026-07-05T15:57:02.472+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/stock_pipeline_dag.py took 0.875 seconds
