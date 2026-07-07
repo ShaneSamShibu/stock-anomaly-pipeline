@@ -9,45 +9,28 @@ and visualizes results in a live Streamlit dashboard — fully automated with Ap
 ---
 
 ## Architecture
-Yahoo Finance API
-│
-▼
-┌─────────────────┐
-│   Apache Kafka  │  ← Real-time message streaming (Docker)
-│  (producer.py)  │
-└────────┬────────┘
-│
-▼
-┌─────────────────┐
-│  Apache Spark   │  ← Structured streaming, rolling avg + volatility
-│ (spark_consumer)│
-└────────┬────────┘
-│
-▼
-┌─────────────────┐
-│ Isolation Forest│  ← Anomaly detection model (scikit-learn)
-│  (train_model)  │
-└────────┬────────┘
-│
-▼
-┌─────────────────┐
-│   Flask API     │  ← REST prediction endpoint (/invocations)
-│ (serve_model)   │    SageMaker-compatible interface
-└────────┬────────┘
-│
-▼
-┌─────────────────┐
-│ Apache Airflow  │  ← Hourly pipeline orchestration (Docker)
-│  (DAG: 4 tasks) │
-└────────┬────────┘
-│
-▼
-┌─────────────────┐
-│    Streamlit    │  ← Live anomaly visualization dashboard
-│  (dashboard.py) │
-└─────────────────┘
+## Architecture
 
----
+```mermaid
+flowchart TD
+    A[Yahoo Finance API] -->|Every 60 seconds| B[Apache Kafka\nproducer.py]
+    B -->|stock-prices topic| C[Apache Spark\nspark_consumer.py]
+    C -->|Rolling avg + volatility| D[Isolation Forest Model\ntrain_model.py]
+    D -->|Predictions| E[Flask REST API\nserve_model.py]
+    E -->|SageMaker-compatible| F[AWS SageMaker\ndeploy_sagemaker.py]
+    C -->|Hourly schedule| G[Apache Airflow DAG\nstock_pipeline_dag.py]
+    G -->|Automated pipeline| D
+    D -->|Anomaly results| H[Streamlit Dashboard\ndashboard.py]
+
+    style A fill:#f0f4ff,stroke:#2563eb
+    style B fill:#fef3c7,stroke:#d97706
+    style C fill:#fef3c7,stroke:#d97706
+    style D fill:#dcfce7,stroke:#16a34a
+    style E fill:#f3e8ff,stroke:#9333ea
+    style F fill:#ffe4e6,stroke:#e11d48
+    style G fill:#fef3c7,stroke:#d97706
+    style H fill:#f0f9ff,stroke:#0284c7
+```
 
 ## Tech Stack
 
@@ -179,7 +162,7 @@ Response:
 
 ## Built in response to
 
-This project was built specifically to address feedback from a data science internship rejection citing lack of experience with:
+This project was built specifically with:
  ✅ Real-time, end-to-end production pipelines
  ✅ Apache Kafka for scalable data streaming
  ✅ Apache Spark for distributed data processing
